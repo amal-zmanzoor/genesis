@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #14151f;
+  --surface: #1d1e2c;
+  --surface-raised: #262838;
+  --foreground: #f4f3f8;
+  --muted: #9a99ab;
+  --border: #33344a;
+
+  --accent: #6c63ff;
+  --accent-hover: #7d74ff;
+  --accent-muted: #2a2860;
+  --success: #34c79a;
+  --danger: #ff6b81;
+
+  --bubble-user: #f4f3f8;
+  --bubble-user-text: #1d1e2c;
+  --bubble-assistant: #262838;
+  --bubble-assistant-text: #f4f3f8;
+
+  --pastel-pink: #f7c6d9;
+  --pastel-mint: #b8e8c8;
+  --pastel-peach: #f9ddb0;
+  --pastel-blue: #c9e4f6;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-bubble-user: var(--bubble-user);
+  --color-bubble-user-text: var(--bubble-user-text);
+  --color-bubble-assistant: var(--bubble-assistant);
+  --color-bubble-assistant-text: var(--bubble-assistant-text);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-pastel-mint: var(--pastel-mint);
+  --color-pastel-peach: var(--pastel-peach);
+  --color-pastel-blue: var(--pastel-blue);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-fade-in-up: fade-in-up 0.7s ease-out both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
