@@ -1,6 +1,8 @@
 # Genesis
 
 A personal AI chat assistant built with Next.js and the Vercel AI SDK. Besides general chat, it can look up live stock prices, draw interactive price charts, search the web, and email things to you, with a confirmation step before anything is sent.
+<img width="1424" height="747" alt="image" src="https://github.com/user-attachments/assets/703d9aea-ad3a-498e-9e3c-e4f69c15aebb" />
+
 
 ## Features
 
